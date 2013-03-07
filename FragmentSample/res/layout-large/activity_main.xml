@@ -10,14 +10,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <fragment android:name="com.example.fragmentsample.FragmentObject"
-              android:id="@+id/object_fragment"
+    <fragment android:name="com.example.fragmentsample.PlayerListFragment"
+              android:id="@+id/playerlist_fragment"
               android:layout_weight="1"
               android:layout_width="0dp"
               android:layout_height="match_parent" />
 
-    <fragment android:name="com.example.fragmentsample.FragmentProperties"
-              android:id="@+id/property_fragment"
+    <fragment android:name="com.example.fragmentsample.PlayerDetailFragment"
+              android:id="@+id/playerdetail_fragment"
               android:layout_weight="2"
               android:layout_width="0dp"
               android:layout_height="match_parent" />

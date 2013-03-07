@@ -1,5 +1,5 @@
 package com.example.fragmentsample;
 
-public interface PlayerFragmentDelegate {
+public interface PlayerListFragmentDelegate {
 	public void selectedPlayer(String player);
 }

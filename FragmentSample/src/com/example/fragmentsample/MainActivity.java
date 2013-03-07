@@ -1,13 +1,14 @@
 package com.example.fragmentsample;
 
 import android.os.Bundle;
+//import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends FragmentActivity implements PlayerFragmentDelegate
+public class MainActivity extends FragmentActivity implements PlayerListFragmentDelegate
 {
 
     @Override
@@ -30,7 +31,7 @@ public class MainActivity extends FragmentActivity implements PlayerFragmentDele
             }
 
             // Create an instance of ExampleFragment
-            FragmentObject firstFragment = new FragmentObject();
+            PlayerListFragment firstFragment = new PlayerListFragment();
 //            FragmentProperties firstFragment = new FragmentProperties();
             
             // In case this activity was started with special instructions from an Intent,
@@ -63,9 +64,9 @@ public class MainActivity extends FragmentActivity implements PlayerFragmentDele
     	if (findViewById(R.id.fragment_container) != null)
     	{    		
     		// Create fragment and give it an argument specifying the article it should show
-    		FragmentProperties newFragment = new FragmentProperties();
+    		PlayerDetailFragment newFragment = new PlayerDetailFragment();
     		Bundle args = new Bundle();
-    		args.putString(FragmentProperties.CLUB_NAME, PlayerClubDictionary.clubOfPlayer(this, player));
+    		args.putString(PlayerDetailFragment.CLUB_NAME, PlayerClubDictionary.clubOfPlayer(this, player));
     		newFragment.setArguments(args);
 
     		FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -77,6 +78,11 @@ public class MainActivity extends FragmentActivity implements PlayerFragmentDele
 
     		// Commit the transaction
     		transaction.commit();
+    	}
+    	else
+    	{
+    		PlayerDetailFragment propertyFragment = (PlayerDetailFragment) getSupportFragmentManager().findFragmentById(R.id.playerdetail_fragment);
+    		propertyFragment.updatePlayerDetail(PlayerClubDictionary.clubOfPlayer(this, player));
     	}
     }
 }
