@@ -8,7 +8,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends FragmentActivity implements PlayerListFragmentDelegate
+public class MainActivity extends FragmentActivity implements PlayerListFragment.OnPlayerSelectionListener/*PlayerListFragmentDelegate*/
 {
 
     @Override

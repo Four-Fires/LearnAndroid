@@ -8,21 +8,18 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Didier_Drogba"
-        android:onClick="onPlayerButton" />
+        android:text="@string/Didier_Drogba" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Lionel_Messi"
-        android:onClick="onPlayerButton" />
+        android:text="@string/Lionel_Messi" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Cristiano_Ronaldo"
-        android:onClick="onPlayerButton" />
+        android:text="@string/Cristiano_Ronaldo" />
 
 </LinearLayout>
