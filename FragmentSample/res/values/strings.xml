@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fragment Sample</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="properties_textfield_hint">player\'s club</string>
+    
+    <string name="Didier_Drogba">Didier Drogba</string>
+    <string name="Lionel_Messi">Lionel Messi</string>
+    <string name="Cristiano_Ronaldo">Cristiano Ronaldo</string>
+    <string name="Galatasaray">Galatasaray</string>
+	<string name="Barcelona">Barcelona</string>
+	<string name="Real_Madrid">Real Madrid</string>
+	<string name="Club_Name">Club_Name</string>
+</resources>
