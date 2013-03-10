@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SQL sample</string>
+    <string name="action_settings">Settings</string>
+    <string name="player_list">Player List</string>
+    <string name="add_player">Add Player</string>
+    
+    <string name="player_name_hint">name</string>
+    <string name="player_age_hint">age</string>
+    <string name="player_position_hint">position</string>
+    <string name="player_club_hint">club</string>
+    <string name="add_player_submit">submit</string>
+        
+</resources>
